@@ -1,0 +1,12 @@
+.idea
+.project
+*.DS_Store
+*.iml
+
+build
+out
+target
+*.log
+*.tar
+
+output
