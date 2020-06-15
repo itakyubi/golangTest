@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"gocv.io/x/gocv"
 	"os"
 	"rtsp-frame-parser/file"
@@ -12,7 +11,10 @@ import (
 var queue chan *gocv.Mat
 
 func main() {
-	queue = make(chan *gocv.Mat)
+	//file.CountBySecond2("/Users/wuao/Downloads/log8.csv")
+	//file.CountBySecond3("/Users/wuao/Downloads/log8.csv")
+
+	/*queue = make(chan *gocv.Mat)
 	go capture()
 	go getFrame()
 
@@ -22,7 +24,7 @@ func main() {
 	time.Sleep(1000 * time.Millisecond)
 	file.CountBySecond("/Users/wuao/Downloads/origin.csv")
 	fmt.Println("")
-	file.CountBySecond("/Users/wuao/Downloads/frame.csv")
+	file.CountBySecond("/Users/wuao/Downloads/frame.csv")*/
 }
 
 func capture() {
